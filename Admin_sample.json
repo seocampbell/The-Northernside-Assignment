@@ -1,0 +1,772 @@
+{
+    "staff": [
+        {
+            "id": "TNS1347",
+            "name": [
+                "Hisham",
+                "Hernandez"
+            ],
+            "department": {
+                "name": "Admin"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS1616",
+            "name": [
+                "Zelda",
+                "Ings"
+            ],
+            "department": {
+                "name": "Admin"
+            },
+            "server_admin": true
+        },
+        {
+            "id": "TNS2070",
+            "name": [
+                "Vivien",
+                "Williams"
+            ],
+            "department": {
+                "name": "Admin"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS1248",
+            "name": [
+                "Priti",
+                "Nguyen"
+            ],
+            "department": {
+                "name": "Admin"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS2514",
+            "name": [
+                "Tara",
+                "Miller"
+            ],
+            "department": {
+                "name": "Admin"
+            },
+            "server_admin": true
+        },
+        {
+            "id": "TNS1488",
+            "name": [
+                "Willah",
+                "Davis"
+            ],
+            "department": {
+                "name": "Admin"
+            },
+            "server_admin": true
+        },
+        {
+            "id": "TNS2207",
+            "name": [
+                "Willah",
+                "Vail"
+            ],
+            "department": {
+                "name": "Admin"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS2602",
+            "name": [
+                "Priti",
+                "Xu"
+            ],
+            "department": {
+                "name": "Admin"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS2335",
+            "name": [
+                "Chlo\u00c3\u00ab",
+                "Williams"
+            ],
+            "department": {
+                "name": "Admin"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS1783",
+            "name": [
+                "Xander",
+                "Young"
+            ],
+            "department": {
+                "name": "Admin"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS2283",
+            "name": [
+                "Zelda",
+                "Rodriguez"
+            ],
+            "department": {
+                "name": "Admin"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS2940",
+            "name": [
+                "Bob",
+                "Brown"
+            ],
+            "department": {
+                "name": "Admin"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS1943",
+            "name": [
+                "S\u00c3\u00b8rina",
+                "Vail"
+            ],
+            "department": {
+                "name": "Admin"
+            },
+            "server_admin": true
+        },
+        {
+            "id": "TNS2745",
+            "name": [
+                "Kira",
+                "Ullman"
+            ],
+            "department": {
+                "name": "Admin"
+            },
+            "server_admin": false
+        }
+    ],
+    "assets": [
+        {
+            "asset_name": "GOLDEN CHEETAH",
+            "asset_type": "File",
+            "owner": "TNS2647",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "LOW",
+                        "HIGH"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 5
+            },
+            "file_type": "Image",
+            "server": {
+                "server_name": "ORIGINAL AARDVARK",
+                "ip": [
+                    10,
+                    202,
+                    232,
+                    102
+                ]
+            }
+        },
+        {
+            "asset_name": "ISOLATED DEER",
+            "asset_type": "File",
+            "owner": "TNS1449",
+            "details": {
+                "security": {
+                    "cia": [
+                        "HIGH",
+                        "MEDIUM",
+                        "HIGH"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 1
+            },
+            "file_type": "Document",
+            "server": {
+                "server_name": "STUPID SLOTH",
+                "ip": [
+                    10,
+                    202,
+                    255,
+                    132
+                ]
+            }
+        },
+        {
+            "asset_name": "DEVASTATED OSTRICH",
+            "asset_type": "File",
+            "owner": "TNS1783",
+            "details": {
+                "security": {
+                    "cia": [
+                        "HIGH",
+                        "MEDIUM",
+                        "LOW"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 5
+            },
+            "file_type": "Document",
+            "server": {
+                "server_name": "YOUTHFUL QUETZAL",
+                "ip": [
+                    10,
+                    202,
+                    241,
+                    255
+                ]
+            }
+        },
+        {
+            "asset_name": "HONOURED ANT",
+            "asset_type": "Server",
+            "owner": "TNS1616",
+            "details": {
+                "security": {
+                    "cia": [
+                        "LOW",
+                        "MEDIUM",
+                        "MEDIUM"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": false,
+                        "Customer Sensitive": true
+                    }
+                },
+                "location": {
+                    "category": "Office",
+                    "place": "Sheffield",
+                    "address": [
+                        "61, Park Avenue",
+                        "S1 9JU"
+                    ]
+                }
+            },
+            "network_address": {
+                "ipv4": [
+                    10,
+                    202,
+                    103,
+                    172
+                ]
+            }
+        },
+        {
+            "asset_name": "PRETTY GIRAFFE",
+            "asset_type": "File",
+            "owner": "TNS2974",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "HIGH",
+                        "MEDIUM"
+                    ],
+                    "data_categories": {
+                        "Personal": false,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": false
+                    }
+                },
+                "retention": 0.5
+            },
+            "file_type": "Document",
+            "server": {
+                "server_name": "HONOURED ANT",
+                "ip": [
+                    10,
+                    202,
+                    103,
+                    172
+                ]
+            }
+        },
+        {
+            "asset_name": "TRUTHFUL FELINE",
+            "asset_type": "File",
+            "owner": "TNS1559",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "MEDIUM",
+                        "LOW"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": false
+                    }
+                },
+                "retention": 5
+            },
+            "file_type": "Document",
+            "server": {
+                "server_name": "VIOLET BADGER",
+                "ip": [
+                    10,
+                    202,
+                    195,
+                    93
+                ]
+            }
+        },
+        {
+            "asset_name": "JUSTIFIED SLOTH",
+            "asset_type": "File",
+            "owner": "TNS1703",
+            "details": {
+                "security": {
+                    "cia": [
+                        "LOW",
+                        "LOW",
+                        "HIGH"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": false,
+                        "Customer Sensitive": false
+                    }
+                },
+                "retention": 1
+            },
+            "file_type": "Document",
+            "server": {
+                "server_name": "HAPPY QUETZAL",
+                "ip": [
+                    10,
+                    202,
+                    183,
+                    164
+                ]
+            }
+        },
+        {
+            "asset_name": "WISTFUL AARDVARK",
+            "asset_type": "File",
+            "owner": "TNS1960",
+            "details": {
+                "security": {
+                    "cia": [
+                        "HIGH",
+                        "MEDIUM",
+                        "LOW"
+                    ],
+                    "data_categories": {
+                        "Personal": false,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": false
+                    }
+                },
+                "retention": 1
+            },
+            "file_type": "Spreadsheet",
+            "server": {
+                "server_name": "BROKEN OSTRICH",
+                "ip": [
+                    10,
+                    202,
+                    173,
+                    56
+                ]
+            }
+        },
+        {
+            "asset_name": "ENGAGED EGRET",
+            "asset_type": "Physical Media",
+            "owner": "TNS1783",
+            "details": {
+                "security": {
+                    "cia": [
+                        "HIGH",
+                        "HIGH",
+                        "LOW"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": false,
+                        "Customer Sensitive": false
+                    }
+                },
+                "retention": 2,
+                "location": {
+                    "category": "Office",
+                    "place": "Sheffield",
+                    "address": [
+                        "61, Park Avenue",
+                        "S1 9JU"
+                    ]
+                }
+            },
+            "media_type": "Hard Drive"
+        },
+        {
+            "asset_name": "EXCESS RHINO",
+            "asset_type": "File",
+            "owner": "TNS1783",
+            "details": {
+                "security": {
+                    "cia": [
+                        "HIGH",
+                        "HIGH",
+                        "HIGH"
+                    ],
+                    "data_categories": {
+                        "Personal": false,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 5
+            },
+            "file_type": "Document",
+            "server": {
+                "server_name": "ROYAL OSTRICH",
+                "ip": [
+                    10,
+                    202,
+                    215,
+                    69
+                ]
+            }
+        },
+        {
+            "asset_name": "BROKEN AARDVARK",
+            "asset_type": "File",
+            "owner": "TNS2070",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "LOW",
+                        "MEDIUM"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": false
+                    }
+                },
+                "retention": 0.5
+            },
+            "file_type": "Database",
+            "server": {
+                "server_name": "VACCINATED ANT",
+                "ip": [
+                    10,
+                    202,
+                    50,
+                    175
+                ]
+            }
+        },
+        {
+            "asset_name": "YOUTHFUL DEER",
+            "asset_type": "File",
+            "owner": "TNS2300",
+            "details": {
+                "security": {
+                    "cia": [
+                        "LOW",
+                        "HIGH",
+                        "HIGH"
+                    ],
+                    "data_categories": {
+                        "Personal": false,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 1
+            },
+            "file_type": "Database",
+            "server": {
+                "server_name": "LAUGHING WALRUS",
+                "ip": [
+                    10,
+                    202,
+                    209,
+                    153
+                ]
+            }
+        },
+        {
+            "asset_name": "IGNOBLE AARDVARK",
+            "asset_type": "File",
+            "owner": "TNS2514",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "MEDIUM",
+                        "LOW"
+                    ],
+                    "data_categories": {
+                        "Personal": false,
+                        "Personal Sensitive": false,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 1
+            },
+            "file_type": "Database",
+            "server": {
+                "server_name": "ROYAL ANT",
+                "ip": [
+                    10,
+                    202,
+                    165,
+                    140
+                ]
+            }
+        },
+        {
+            "asset_name": "GLAD UGUISU",
+            "asset_type": "File",
+            "owner": "TNS2541",
+            "details": {
+                "security": {
+                    "cia": [
+                        "LOW",
+                        "LOW",
+                        "MEDIUM"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 0.5
+            },
+            "file_type": "Document",
+            "server": {
+                "server_name": "GOLDEN DEER",
+                "ip": [
+                    10,
+                    202,
+                    86,
+                    67
+                ]
+            }
+        },
+        {
+            "asset_name": "REGAL PANDA",
+            "asset_type": "File",
+            "owner": "TNS2745",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "LOW",
+                        "HIGH"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 5
+            },
+            "file_type": "Database",
+            "server": {
+                "server_name": "ANNOYED NARWHAL",
+                "ip": [
+                    10,
+                    202,
+                    250,
+                    101
+                ]
+            }
+        },
+        {
+            "asset_name": "ROYAL VIPER",
+            "asset_type": "Physical Media",
+            "owner": "TNS1559",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "HIGH",
+                        "HIGH"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": false,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 2,
+                "location": {
+                    "category": "Office",
+                    "place": "Sheffield",
+                    "address": [
+                        "61, Park Avenue",
+                        "S1 9JU"
+                    ]
+                }
+            },
+            "media_type": "USB Stick",
+            "encryption": {
+                "cipher": "None",
+                "keylength": 0
+            }
+        },
+        {
+            "asset_name": "YOUTHFUL ANT",
+            "asset_type": "File",
+            "owner": "TNS1250",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "HIGH",
+                        "MEDIUM"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 5
+            },
+            "file_type": "Document",
+            "server": {
+                "server_name": "PRETTY OSTRICH",
+                "ip": [
+                    10,
+                    202,
+                    139,
+                    10
+                ]
+            }
+        },
+        {
+            "asset_name": "HONOURED HIPPO",
+            "asset_type": "File",
+            "owner": "TNS1248",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "LOW",
+                        "MEDIUM"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 1
+            },
+            "file_type": "Spreadsheet",
+            "server": {
+                "server_name": "MIGHTY EGRET",
+                "ip": [
+                    10,
+                    202,
+                    102,
+                    13
+                ]
+            }
+        },
+        {
+            "asset_name": "CALM MONGOOSE",
+            "asset_type": "File",
+            "owner": "TNS1248",
+            "details": {
+                "security": {
+                    "cia": [
+                        "LOW",
+                        "LOW",
+                        "LOW"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 0.5
+            },
+            "file_type": "Spreadsheet",
+            "server": {
+                "server_name": "VACCINATED ANT",
+                "ip": [
+                    10,
+                    202,
+                    50,
+                    175
+                ]
+            }
+        },
+        {
+            "asset_name": "VACCINATED ANT",
+            "asset_type": "Server",
+            "owner": "TNS1248",
+            "details": {
+                "security": {
+                    "cia": [
+                        "LOW",
+                        "HIGH",
+                        "HIGH"
+                    ],
+                    "data_categories": {
+                        "Personal": false,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": false
+                    }
+                },
+                "location": {
+                    "category": "Data Centre",
+                    "place": "Ipswich",
+                    "address": [
+                        "15, Victoria Street",
+                        "IP8 0BQ"
+                    ]
+                }
+            },
+            "network_address": {
+                "ipv4": [
+                    10,
+                    202,
+                    50,
+                    175
+                ]
+            }
+        }
+    ]
+}
