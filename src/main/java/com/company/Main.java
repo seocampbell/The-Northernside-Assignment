@@ -8,10 +8,11 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static final Scanner scanner = new Scanner(System.in);
+    private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-
+        Users itSelector = new Users();
+        itSelector.setItSelector("staff");
        JsonParser employee = new JsonParser(){
 
            Scanner scanner = new Scanner(System.in);
@@ -29,6 +30,15 @@ public class Main {
         String teamSelection = scanner.nextLine();
         if (teamSelection.equals("1"));
         {
+            System.out.println("Would you like to search the Asset or Staff register\n"
+            + "Please select\n 1. Staff Search \n 2. Asset Search ");
+            String searchSelection = scanner.nextLine();
+            if (searchSelection.equals("1")) {
+                employee.assetList("staff");
+            }  employee.assetList("assets");{
+            System.out.println("No select number");
+            }
+
             System.out.println("\nPlease Enter the TNS Asset No. \n");
             String selectNumber = scanner.nextLine();
             employee.itItem(selectNumber);
@@ -36,12 +46,9 @@ public class Main {
             employee.itMapping();
         }
 
-
-
-
-
     }
 
 }
+
 
 
