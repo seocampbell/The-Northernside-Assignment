@@ -1,53 +1,68 @@
 package com.company;
 
 import com.company.Json.*;
-import com.google.gson.internal.bind.util.ISO8601Utils;
-
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 
-    private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Users itSelector = new Users();
-        itSelector.setItSelector("staff");
-       JsonParser employee = new JsonParser(){
+        //comments to come - SC
+        int teamSelection;
+        String AssetSearch;
+        Scanner scanner = new Scanner(System.in);
+        Users welcome = new Users("TNS1449");
+        JsonParser assetDetails = new JsonParser();
+        Department selector = new Department("", "");
 
-           Scanner scanner = new Scanner(System.in);
+        //Welcome screen to present the user options - sc
+        welcome.welcomeMessage();
 
-           public Scanner getScanner() {
-               scanner.nextLine();
-               return scanner;
-           }
-       };
+        //Creating a loop to make sure only the available options are selected and correct file and department created - sc
+        do {
+            welcome.departmentOptions();
+            teamSelection = scanner.nextInt();
+            if (teamSelection == 1) {
+                selector.setJsonFileName("src/IT_Assets.json");
+            } else if (teamSelection == 2) {
+                selector.setJsonFileName("src/Admin_Assets.json");
+            } else System.out.println("Unfortunately, that is not one of the options\n");
+        } while (teamSelection > 2);
 
-        System.out.println("\nWelcome to the Asset Register.  \n"
-                + "Please search on the following option\n"
-                + "1 - IT Team\n"
-                + "2 - Admin Team");
-        String teamSelection = scanner.nextLine();
-        if (teamSelection.equals("1"));
-        {
-            System.out.println("Would you like to search the Asset or Staff register\n"
-            + "Please select\n 1. Staff Search \n 2. Asset Search ");
-            String searchSelection = scanner.nextLine();
-            if (searchSelection.equals("1")) {
-                employee.assetList("staff");
-            }  employee.assetList("assets");{
-            System.out.println("No select number");
-            }
+        do {
+            welcome.searchCriteria();
+            teamSelection = scanner.nextInt();
+            if (teamSelection == 1) {
+                selector.setDepartmentSelector("staff");
+            } else if (teamSelection == 2) {
+                selector.setDepartmentSelector("assets");
+            } else System.out.println("Unfortunately, that is not one of the options\n");
+        } while (teamSelection > 2);
 
-            System.out.println("\nPlease Enter the TNS Asset No. \n");
-            String selectNumber = scanner.nextLine();
-            employee.itItem(selectNumber);
-            employee.itElements();
-            employee.itMapping();
+        assetDetails.assetList(selector.getDepartmentSelector(),selector.getJsonFileName());
+
+        System.out.println("Please enter a valid TNS Asset Number");
+        scanner.nextLine();//added as scanner was not picking up from the of int to string - sc
+
+        //Input for the asset search - sc
+        String selectNumber = scanner.nextLine();
+        while(selectNumber.isEmpty()){
+            System.out.println("The Asset Search was left empty.\n"
+                + "Please enter a valid TNS Asset Number");
+            selectNumber = scanner.nextLine();
         }
+        System.out.println(selectNumber);
+        //Call the Department > ItItems method - sc
+        assetDetails.itItem(selectNumber);
+        //Call the Department > itElements method - sc
+        assetDetails.itElements();
+        //Call the Department > itMappings method - sc
+        assetDetails.itMapping();
+
+        //close the scanner - sc
+        scanner.close();
 
     }
-
 }
 
 
