@@ -18,8 +18,8 @@ import java.util.Map;
 // looping the list and mapping into object on the search criteria provided in the itItem string
 public class JsonParser {
     private final ArrayList<String> itList = new ArrayList<>();
-    private final ArrayList<String> assetList = new ArrayList<>();
-    private String itSelector = "staff";
+    private String fileName;
+    private String itSelector;
     private String ArrayValues;
     private String searchItem, foundItem;
     String Map;
@@ -27,15 +27,16 @@ public class JsonParser {
     Object mapAdmin, mapID, mapDept, mapName;
     //AssetObject Mapping
 
-        //json parser object to parse read the IT staff files - SC
-        public void assetList() {
+
+    //json parser object to parse read the IT staff files - SC
+        public void assetList(String departmentSelector, String fileName) {
         JSONParser jsonParser = new JSONParser();
         try {
             //Parsing the contents of the JSON file - SC
-            JSONObject jsonObject = (JSONObject) jsonParser.parse(new FileReader("src/IT_Assets.json"));
+            JSONObject jsonObject = (JSONObject) jsonParser.parse(new FileReader(fileName));
             //Retrieving the array and writing to a staff list - SC
             //The itSelector will define between the Staff list or the Asset list - SC
-            JSONArray staffArray = (JSONArray) jsonObject.get(itSelector);
+            JSONArray staffArray = (JSONArray) jsonObject.get(departmentSelector);
             for (int i = 0; i < staffArray.size(); i++) {
                 //loop through the staffArray count to format a usable itList - SC
                 ArrayValues = ("" + staffArray.get(i) + "");
@@ -54,8 +55,6 @@ public class JsonParser {
 
     //A search to find the matching name with then Json string
     public String itItem(String selectNumber) {
-        assetList();
-
         for (int i = 0; i < this.itList.size(); i++) {
             searchItem = this.itList.get(i);
             if (this.searchItem.contains(selectNumber)) {
@@ -64,6 +63,7 @@ public class JsonParser {
             }
         }return foundItem;
     }
+    //The foundItem record is then passed to the itElements - SC
     public void itElements() {
         Gson staffElem = new GsonBuilder().setPrettyPrinting().create();
         try {
@@ -74,6 +74,8 @@ public class JsonParser {
             e.printStackTrace();
         }
     }
+    //
+    //the findItem is mapped out
     public void itMapping() {
         try {
             // JSON string
@@ -83,26 +85,19 @@ public class JsonParser {
 
             // print map keys and values
             for (Map.Entry<String, Object> entry : map.entrySet()) {
-                if (entry.getKey().equals("server_admin")) {
-                    this.mapAdmin = entry.getValue();
-                }
-                if (entry.getKey().equals("name")) {
-                    this.mapName = entry.getValue();
-                }
-                if (entry.getKey().equals("id")) {
-                    this.mapID = entry.getValue();
-                } else if (entry.getKey().equals("department")) {
-                    this.mapDept = entry.getValue();
-                }
-                //System.out.println(entry.getKey() + ": " + entry.getValue());
+//                if (entry.getKey().equals("server_admin")) {
+//                    this.mapAdmin = entry.getValue();}
+//                if (entry.getKey().equals("name")) {
+//                    this.mapName = entry.getValue();}
+//                if (entry.getKey().equals("id")) {
+//                    this.mapID = entry.getValue();} else if (entry.getKey().equals("department")) {
+//                    this.mapDept = entry.getValue();}
+                System.out.println(entry.getKey() + ": " + entry.getValue());
             }
-            System.out.println("Server Administrator: " + this.mapAdmin);
-            System.out.println("Name: " + this.mapName);
-            System.out.println("Asset ID: " + this.mapID);
-            System.out.println("Department: " + this.mapDept);
 
         } catch (Exception ex) {
+            System.out.println("Asset Number is unavailable, please check the number and try again. ");
             ex.printStackTrace();
-        }
+              }
     }
 }
