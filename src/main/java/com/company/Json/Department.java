@@ -10,7 +10,7 @@ public class Department {
         if (ValidateResource.equals("staff") ||
                 ValidateResource.equals("assets")) {
             this.departmentSelector = departmentSelector;
-        } else System.out.println("Department does not exist, please check.");
+        } else System.out.println("Error, the department has not been expected, please check.");
     }
 
 
@@ -31,11 +31,6 @@ public class Department {
     }
 
     public Department(String departmentSelector, String jsonFileName) {
-        String validateSelection = departmentSelector;
-        if (validateSelection.equals("staff") ||
-                validateSelection.equals("assets")) {
-            this.jsonFileName = jsonFileName;
-        } else System.out.println("Error! The array selector has not been set!");
         this.departmentSelector = departmentSelector;
     }
 
