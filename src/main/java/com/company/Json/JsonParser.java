@@ -18,15 +18,10 @@ import java.util.Map;
 // looping the list and mapping into object on the search criteria provided in the itItem string
 public class JsonParser {
     private final ArrayList<String> itList = new ArrayList<>();
-    private String fileName;
-    private String itSelector;
-    private String ArrayValues;
+    private String arrayValues;
     private String searchItem, foundItem;
-    String Map;
-    //StaffObject Mapping
-    Object mapAdmin, mapID, mapDept, mapName;
-    //AssetObject Mapping
-
+    private String Map;
+    private Object mapAdmin, mapID, mapDept, mapName;
 
     //json parser object to parse read the IT staff files - SC
         public void assetList(String departmentSelector, String fileName) {
@@ -39,17 +34,21 @@ public class JsonParser {
             JSONArray staffArray = (JSONArray) jsonObject.get(departmentSelector);
             for (int i = 0; i < staffArray.size(); i++) {
                 //loop through the staffArray count to format a usable itList - SC
-                ArrayValues = ("" + staffArray.get(i) + "");
+                arrayValues = ("" + staffArray.get(i) + "");
                 //Add the ArrayValues to ITList
-                itList.add(ArrayValues);
+                itList.add(arrayValues);
                 //System.out.println(ArrayValues);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+            System.exit(0);
         } catch (IOException e) {
             e.printStackTrace();
+            System.exit(0);
         } catch (ParseException e) {
             e.printStackTrace();
+            //stop the application on error
+            System.exit(0);
         }
     }
 
@@ -59,7 +58,6 @@ public class JsonParser {
             searchItem = this.itList.get(i);
             if (this.searchItem.contains(selectNumber)) {
                 foundItem = this.searchItem;
-                //System.out.println(this.searchItem);
             }
         }return foundItem;
     }
@@ -72,6 +70,7 @@ public class JsonParser {
             //System.out.println(jsonInString);
         } catch (Exception e) {
             e.printStackTrace();
+            System.exit(0);
         }
     }
     //
@@ -98,6 +97,7 @@ public class JsonParser {
         } catch (Exception ex) {
             System.out.println("Asset Number is unavailable, please check the number and try again. ");
             ex.printStackTrace();
+            System.exit(0);
               }
     }
 }

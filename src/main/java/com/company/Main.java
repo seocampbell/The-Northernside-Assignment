@@ -1,6 +1,8 @@
 package com.company;
 
 import com.company.Json.*;
+import com.company.Operations.Usage;
+
 import java.util.Scanner;
 
 public class Main {
@@ -8,15 +10,24 @@ public class Main {
 
     public static void main(String[] args) {
         //comments to come - SC
+
+
         int teamSelection;
-        String AssetSearch;
+
+        Department selector = new Department("null", "null");
         Scanner scanner = new Scanner(System.in);
-        Users welcome = new Users("TNS1449");
         JsonParser assetDetails = new JsonParser();
-        Department selector = new Department("", "");
+        Users welcome = new Users("null");
+        Usage userAuthenticator = new Usage("null","null");
 
         //Welcome screen to present the user options - sc
         welcome.welcomeMessage();
+        System.out.println("Username: (Username is Test)" );
+        String userInput = scanner.nextLine();
+        userAuthenticator.setUserName(userInput);
+        System.out.println("Password: (Password is Password)");
+        userInput = scanner.nextLine();
+        userAuthenticator.setUserPassword(userInput);
 
         //Creating a loop to make sure only the available options are selected and correct file and department created - sc
         do {
@@ -38,6 +49,8 @@ public class Main {
                 selector.setDepartmentSelector("assets");
             } else System.out.println("Unfortunately, that is not one of the options\n");
         } while (teamSelection > 2);
+
+        //System.exit(0);
 
         assetDetails.assetList(selector.getDepartmentSelector(),selector.getJsonFileName());
 

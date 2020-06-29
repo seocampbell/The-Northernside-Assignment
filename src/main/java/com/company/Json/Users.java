@@ -6,7 +6,8 @@ public class Users {
 
     //WelcomeMessage screen
     public void welcomeMessage(){
-        System.out.println("\nWelcome to the Asset Register. \n");
+        System.out.println("\nWelcome to the Asset Register. \n " +
+        "\nTo login, please enter your UserName and Password\n");
     }
 
     public void departmentOptions(){
