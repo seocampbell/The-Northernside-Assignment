@@ -14,11 +14,15 @@ public class Main {
 
         int teamSelection;
         String userInput;
+        String selectNumber;
 
+        //Constructor created for the department and json file
         Department selector = new Department(null, null);
         Scanner scanner = new Scanner(System.in);
         JsonParser assetDetails = new JsonParser();
-        Users welcome = new Users(null);
+        //Constructor set for the user messages
+        Users welcome = new Users();
+        //Constructor set for the username and password
         Usage userAuthenticator = new Usage(null,null);
 
         //Welcome screen to present the user options - sc
@@ -65,17 +69,18 @@ public class Main {
         assetDetails.assetList(selector.getDepartmentSelector(),selector.getJsonFileName());
 
         //User to add a TNS number
-        System.out.println("Please enter a valid TNS Asset Number, please include the TNS");
+        welcome.assetSearch();
         scanner.nextLine();//added as scanner was not picking up from the of int to string - sc
 
         //Input for the asset search - sc
-        String selectNumber = scanner.nextLine();
-        while(selectNumber.isEmpty()){
-            System.out.println("The Asset Search was left empty.\n"
-                + "Please enter a valid TNS Asset Number");
+        selectNumber = scanner.nextLine();
+        welcome.setAssetNumber(selectNumber);
+        selectNumber = welcome.getAssetNumber();
+        while(selectNumber==null||selectNumber.isEmpty()){
+            System.out.println("Please re-enter a valid TNS Asset Number");
             selectNumber = scanner.nextLine();
         }
-        System.out.println(selectNumber);
+        //System.out.println(selectNumber);
 
         //Call the 2nd method in JsonParser - sc
         assetDetails.itItem(selectNumber);
