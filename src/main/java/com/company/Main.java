@@ -13,48 +13,59 @@ public class Main {
 
 
         int teamSelection;
+        String userInput;
 
-        Department selector = new Department("null", "null");
+        Department selector = new Department(null, null);
         Scanner scanner = new Scanner(System.in);
         JsonParser assetDetails = new JsonParser();
-        Users welcome = new Users("null");
-        Usage userAuthenticator = new Usage("null","null");
+        Users welcome = new Users(null);
+        Usage userAuthenticator = new Usage(null,null);
 
         //Welcome screen to present the user options - sc
         welcome.welcomeMessage();
-        System.out.println("Username: (Username is Test)" );
-        String userInput = scanner.nextLine();
-        userAuthenticator.setUserName(userInput);
-        System.out.println("Password: (Password is Password)");
-        userInput = scanner.nextLine();
-        userAuthenticator.setUserPassword(userInput);
+        //loop to repeat the username entry until true
+        do {
+            //details set for prototype only - sc
+            System.out.println("Username: (Username is Test)");
+            userInput = scanner.nextLine();
+            userAuthenticator.setUserName(userInput);
+        }while (userInput.equals(true));
 
-        //Creating a loop to make sure only the available options are selected and correct file and department created - sc
+        //loop to repeat the username entry until true
+        do {
+            //details set for prototype only
+            System.out.println("Password: (Password is Password)");
+            userInput = scanner.nextLine();
+            userAuthenticator.setUserPassword(userInput);
+        }while (userInput.equals(true));
+
+        //Creating a loop to make sure only the available options are selected and correct file and department to be selected - sc
         do {
             welcome.departmentOptions();
             teamSelection = scanner.nextInt();
             if (teamSelection == 1) {
-                selector.setJsonFileName("src/IT_Assets.json");
+                selector.setJsonFileName(teamSelection);
             } else if (teamSelection == 2) {
-                selector.setJsonFileName("src/Admin_Assets.json");
+                selector.setJsonFileName(teamSelection);
             } else System.out.println("Unfortunately, that is not one of the options\n");
         } while (teamSelection > 2);
 
+        //Creating a loop to make sure only the available options are selected and correct User or System details and selected - sc
         do {
             welcome.searchCriteria();
             teamSelection = scanner.nextInt();
             if (teamSelection == 1) {
-                selector.setDepartmentSelector("staff");
+                selector.setDepartmentSelector(teamSelection);
             } else if (teamSelection == 2) {
-                selector.setDepartmentSelector("assets");
+                selector.setDepartmentSelector(teamSelection);
             } else System.out.println("Unfortunately, that is not one of the options\n");
         } while (teamSelection > 2);
 
-        //System.exit(0);
-
+        //Call the first method in the JsonParser to set the locations - sc
         assetDetails.assetList(selector.getDepartmentSelector(),selector.getJsonFileName());
 
-        System.out.println("Please enter a valid TNS Asset Number");
+        //User to add a TNS number
+        System.out.println("Please enter a valid TNS Asset Number, please include the TNS");
         scanner.nextLine();//added as scanner was not picking up from the of int to string - sc
 
         //Input for the asset search - sc
@@ -65,11 +76,14 @@ public class Main {
             selectNumber = scanner.nextLine();
         }
         System.out.println(selectNumber);
-        //Call the Department > ItItems method - sc
+
+        //Call the 2nd method in JsonParser - sc
         assetDetails.itItem(selectNumber);
-        //Call the Department > itElements method - sc
+
+        //Call the 3rd method in JsonParser - sc
         assetDetails.itElements();
-        //Call the Department > itMappings method - sc
+
+        //Call the 4th method in JsonParser - sc
         assetDetails.itMapping();
 
         //close the scanner - sc
