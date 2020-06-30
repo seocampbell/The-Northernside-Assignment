@@ -21,8 +21,8 @@ public class Usage {
         }
 
     public void setUserName(String userName) {
-        String validateuserName = userName;
-        if (validateuserName.equals("Test")) {
+        String validateUserName = userName;
+        if (validateUserName.equals("Test")) {
             this.userPassword = userPassword;
         } else System.out.println("User not found, please try again");
         this.userName = userName;
@@ -41,7 +41,11 @@ public class Usage {
             this.userPassword = userPassword;
         }
 
-        public void statistics(String logPath) {
+    public void departmentSearchLog(String logPath) {
+        this.logPath = logPath;
+    }
+
+        public void resultsLog(String logPath) {
             this.logPath = logPath;
     }
 
