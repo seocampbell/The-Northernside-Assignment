@@ -1,0 +1,798 @@
+{
+    "staff": [
+        {
+            "id": "TNS2300",
+            "name": [
+                "Willah",
+                "Lopez"
+            ],
+            "department": {
+                "name": "IT"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS1250",
+            "name": [
+                "Deidre",
+                "Clark"
+            ],
+            "department": {
+                "name": "IT"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS2250",
+            "name": [
+                "Priti",
+                "Brown"
+            ],
+            "department": {
+                "name": "IT"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS2974",
+            "name": [
+                "Hisham",
+                "O'Donnell"
+            ],
+            "department": {
+                "name": "IT"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS2835",
+            "name": [
+                "Nin\u00c3\u00a1",
+                "Hernandez"
+            ],
+            "department": {
+                "name": "IT"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS2398",
+            "name": [
+                "Deidre",
+                "Lopez"
+            ],
+            "department": {
+                "name": "IT"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS1871",
+            "name": [
+                "Hisham",
+                "Hernandez"
+            ],
+            "department": {
+                "name": "IT"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS2541",
+            "name": [
+                "Gareth",
+                "Ullman"
+            ],
+            "department": {
+                "name": "IT"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS1960",
+            "name": [
+                "Priti",
+                "O'Donnell"
+            ],
+            "department": {
+                "name": "IT"
+            },
+            "server_admin": false
+        },
+        {
+            "id": "TNS2117",
+            "name": [
+                "Xander",
+                "Evans"
+            ],
+            "department": {
+                "name": "IT"
+            },
+            "server_admin": true
+        },
+        {
+            "id": "TNS1703",
+            "name": [
+                "Zelda",
+                "Miller"
+            ],
+            "department": {
+                "name": "IT"
+            },
+            "server_admin": true
+        },
+        {
+            "id": "TNS2647",
+            "name": [
+                "Ian",
+                "Nguyen"
+            ],
+            "department": {
+                "name": "IT"
+            },
+            "server_admin": true
+        },
+        {
+            "id": "TNS1559",
+            "name": [
+                "Fran\u00c3\u00a7ois",
+                "Johnson"
+            ],
+            "department": {
+                "name": "IT"
+            },
+            "server_admin": true
+        },
+        {
+            "id": "TNS1449",
+            "name": [
+                "Uma",
+                "Vail"
+            ],
+            "department": {
+                "name": "IT"
+            },
+            "server_admin": false
+        }
+    ],
+    "assets": [
+        {
+            "asset_name": "ROYAL JACKAL",
+            "asset_type": "Physical Media",
+            "owner": "TNS1616",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "MEDIUM",
+                        "MEDIUM"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 5,
+                "location": {
+                    "category": "Office",
+                    "place": "Reading",
+                    "address": [
+                        "98, Queen Street",
+                        "RG14 4ZH"
+                    ]
+                }
+            },
+            "media_type": "Hard Drive"
+        },
+        {
+            "asset_name": "HAPPY EGRET",
+            "asset_type": "Server",
+            "owner": "TNS2745",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "MEDIUM",
+                        "HIGH"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": false,
+                        "Customer Sensitive": true
+                    }
+                },
+                "location": {
+                    "category": "Data Centre",
+                    "place": "Luton",
+                    "address": [
+                        "87, Queen Street",
+                        "LU10 9TW"
+                    ]
+                }
+            },
+            "network_address": {
+                "ipv4": [
+                    10,
+                    202,
+                    54,
+                    15
+                ]
+            }
+        },
+        {
+            "asset_name": "FURRY WALRUS",
+            "asset_type": "File",
+            "owner": "TNS2514",
+            "details": {
+                "security": {
+                    "cia": [
+                        "HIGH",
+                        "MEDIUM",
+                        "HIGH"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 5
+            },
+            "file_type": "Database",
+            "server": {
+                "server_name": "DEVASTATED MONGOOSE",
+                "ip": [
+                    10,
+                    202,
+                    36,
+                    237
+                ]
+            }
+        },
+        {
+            "asset_name": "VACCINATED MONGREL",
+            "asset_type": "Server",
+            "owner": "TNS2745",
+            "details": {
+                "security": {
+                    "cia": [
+                        "HIGH",
+                        "LOW",
+                        "HIGH"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": true
+                    }
+                },
+                "location": {
+                    "category": "Office",
+                    "place": "Dudley",
+                    "address": [
+                        "49, King Street",
+                        "DY8 5WU"
+                    ]
+                }
+            },
+            "network_address": {
+                "ipv4": [
+                    10,
+                    202,
+                    93,
+                    68
+                ]
+            }
+        },
+        {
+            "asset_name": "PRETTY FELINE",
+            "asset_type": "File",
+            "owner": "TNS2745",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "HIGH",
+                        "MEDIUM"
+                    ],
+                    "data_categories": {
+                        "Personal": false,
+                        "Personal Sensitive": false,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 1
+            },
+            "file_type": "Spreadsheet",
+            "server": {
+                "server_name": "SOLO MONGREL",
+                "ip": [
+                    10,
+                    202,
+                    227,
+                    22
+                ]
+            }
+        },
+        {
+            "asset_name": "WISTFUL PANDA",
+            "asset_type": "Server",
+            "owner": "TNS2335",
+            "details": {
+                "security": {
+                    "cia": [
+                        "LOW",
+                        "LOW",
+                        "LOW"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": false,
+                        "Customer Sensitive": false
+                    }
+                },
+                "location": {
+                    "category": "Data Centre",
+                    "place": "Harrow",
+                    "address": [
+                        "75, West Street",
+                        "HA12 5BR"
+                    ]
+                }
+            },
+            "network_address": {
+                "ipv4": [
+                    10,
+                    202,
+                    187,
+                    138
+                ]
+            }
+        },
+        {
+            "asset_name": "ROYAL BADGER",
+            "asset_type": "Server",
+            "owner": "TNS2398",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "HIGH",
+                        "MEDIUM"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": true
+                    }
+                },
+                "location": {
+                    "category": "Data Centre",
+                    "place": "Peterborough",
+                    "address": [
+                        "21, Victoria Street",
+                        "PE10 9QD"
+                    ]
+                }
+            },
+            "network_address": {
+                "ipv4": [
+                    10,
+                    202,
+                    242,
+                    234
+                ]
+            }
+        },
+        {
+            "asset_name": "FRIENDLY HIPPO",
+            "asset_type": "Physical Media",
+            "owner": "TNS2207",
+            "details": {
+                "security": {
+                    "cia": [
+                        "HIGH",
+                        "LOW",
+                        "LOW"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": false
+                    }
+                },
+                "retention": 2,
+                "location": {
+                    "category": "Office",
+                    "place": "Sheffield",
+                    "address": [
+                        "61, Park Avenue",
+                        "S1 9JU"
+                    ]
+                }
+            },
+            "media_type": "CD"
+        },
+        {
+            "asset_name": "NANO WALRUS",
+            "asset_type": "File",
+            "owner": "TNS1871",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "MEDIUM",
+                        "MEDIUM"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": false,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 1
+            },
+            "file_type": "Document",
+            "server": {
+                "server_name": "KOOL TRICERATOPS",
+                "ip": [
+                    10,
+                    202,
+                    175,
+                    30
+                ]
+            }
+        },
+        {
+            "asset_name": "KOOL ANT",
+            "asset_type": "Physical Media",
+            "owner": "TNS2514",
+            "details": {
+                "security": {
+                    "cia": [
+                        "HIGH",
+                        "MEDIUM",
+                        "MEDIUM"
+                    ],
+                    "data_categories": {
+                        "Personal": false,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": false
+                    }
+                },
+                "retention": 0.5,
+                "location": {
+                    "category": "Office",
+                    "place": "Telford",
+                    "address": [
+                        "72, King Street",
+                        "TF2 1GF"
+                    ]
+                }
+            },
+            "media_type": "CD",
+            "encryption": {
+                "cipher": "None",
+                "keylength": 0
+            }
+        },
+        {
+            "asset_name": "ANGRY FELINE",
+            "asset_type": "Physical Media",
+            "owner": "TNS1449",
+            "details": {
+                "security": {
+                    "cia": [
+                        "LOW",
+                        "MEDIUM",
+                        "LOW"
+                    ],
+                    "data_categories": {
+                        "Personal": false,
+                        "Personal Sensitive": false,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 2,
+                "location": {
+                    "category": "Office",
+                    "place": "Dudley",
+                    "address": [
+                        "49, King Street",
+                        "DY8 5WU"
+                    ]
+                }
+            },
+            "media_type": "USB Stick"
+        },
+        {
+            "asset_name": "QUIXOTIC QUETZAL",
+            "asset_type": "Server",
+            "owner": "TNS1488",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "LOW",
+                        "HIGH"
+                    ],
+                    "data_categories": {
+                        "Personal": false,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": true
+                    }
+                },
+                "location": {
+                    "category": "Data Centre",
+                    "place": "Ipswich",
+                    "address": [
+                        "15, Victoria Street",
+                        "IP8 0BQ"
+                    ]
+                }
+            },
+            "network_address": {
+                "ipv4": [
+                    10,
+                    202,
+                    5,
+                    10
+                ]
+            }
+        },
+        {
+            "asset_name": "REGAL QUETZAL",
+            "asset_type": "File",
+            "owner": "TNS1250",
+            "details": {
+                "security": {
+                    "cia": [
+                        "LOW",
+                        "LOW",
+                        "HIGH"
+                    ],
+                    "data_categories": {
+                        "Personal": false,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": false
+                    }
+                },
+                "retention": 2
+            },
+            "file_type": "Spreadsheet",
+            "server": {
+                "server_name": "BETTER OSTRICH",
+                "ip": [
+                    10,
+                    202,
+                    255,
+                    110
+                ]
+            }
+        },
+        {
+            "asset_name": "GOLDEN EGRET",
+            "asset_type": "Physical Media",
+            "owner": "TNS1943",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "LOW",
+                        "LOW"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": false,
+                        "Customer Sensitive": false
+                    }
+                },
+                "retention": 1,
+                "location": {
+                    "category": "Office",
+                    "place": "Norwich",
+                    "address": [
+                        "81, Victoria Street",
+                        "NR2 5BH"
+                    ]
+                }
+            },
+            "media_type": "CD"
+        },
+        {
+            "asset_name": "SOLO ANT",
+            "asset_type": "Server",
+            "owner": "TNS1559",
+            "details": {
+                "security": {
+                    "cia": [
+                        "HIGH",
+                        "HIGH",
+                        "LOW"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": false
+                    }
+                },
+                "location": {
+                    "category": "Data Centre",
+                    "place": "Manchester",
+                    "address": [
+                        "36, High Street",
+                        "M11 6GT"
+                    ]
+                }
+            },
+            "network_address": {
+                "ipv4": [
+                    10,
+                    202,
+                    184,
+                    171
+                ]
+            }
+        },
+        {
+            "asset_name": "ROYAL ANT",
+            "asset_type": "Server",
+            "owner": "TNS1960",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "HIGH",
+                        "MEDIUM"
+                    ],
+                    "data_categories": {
+                        "Personal": false,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": false
+                    }
+                },
+                "location": {
+                    "category": "Data Centre",
+                    "place": "York",
+                    "address": [
+                        "43, Queen Street",
+                        "YO14 6HS"
+                    ]
+                }
+            },
+            "network_address": {
+                "ipv4": [
+                    10,
+                    202,
+                    165,
+                    140
+                ]
+            }
+        },
+        {
+            "asset_name": "GLAD TRICERATOPS",
+            "asset_type": "File",
+            "owner": "TNS2541",
+            "details": {
+                "security": {
+                    "cia": [
+                        "HIGH",
+                        "LOW",
+                        "HIGH"
+                    ],
+                    "data_categories": {
+                        "Personal": false,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": false
+                    }
+                },
+                "retention": 1
+            },
+            "file_type": "Image",
+            "server": {
+                "server_name": "TRUTHFUL ANT",
+                "ip": [
+                    10,
+                    202,
+                    181,
+                    98
+                ]
+            }
+        },
+        {
+            "asset_name": "VACCINATED KINGFISHER",
+            "asset_type": "Physical Media",
+            "owner": "TNS1347",
+            "details": {
+                "security": {
+                    "cia": [
+                        "HIGH",
+                        "LOW",
+                        "MEDIUM"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": true,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 5,
+                "location": {
+                    "category": "Data Centre",
+                    "place": "Glasgow",
+                    "address": [
+                        "83, Victoria Street",
+                        "G10 1JG"
+                    ]
+                }
+            },
+            "media_type": "CD"
+        },
+        {
+            "asset_name": "DEVASTATED MONGOOSE",
+            "asset_type": "Server",
+            "owner": "TNS2541",
+            "details": {
+                "security": {
+                    "cia": [
+                        "LOW",
+                        "MEDIUM",
+                        "MEDIUM"
+                    ],
+                    "data_categories": {
+                        "Personal": true,
+                        "Personal Sensitive": false,
+                        "Customer Sensitive": true
+                    }
+                },
+                "location": {
+                    "category": "Data Centre",
+                    "place": "Ipswich",
+                    "address": [
+                        "15, Victoria Street",
+                        "IP8 0BQ"
+                    ]
+                }
+            },
+            "network_address": {
+                "ipv4": [
+                    10,
+                    202,
+                    36,
+                    237
+                ]
+            }
+        },
+        {
+            "asset_name": "TARDY UGUISU",
+            "asset_type": "File",
+            "owner": "TNS2300",
+            "details": {
+                "security": {
+                    "cia": [
+                        "MEDIUM",
+                        "HIGH",
+                        "LOW"
+                    ],
+                    "data_categories": {
+                        "Personal": false,
+                        "Personal Sensitive": false,
+                        "Customer Sensitive": true
+                    }
+                },
+                "retention": 0.5
+            },
+            "file_type": "Image",
+            "server": {
+                "server_name": "DEVASTATED MONGOOSE",
+                "ip": [
+                    10,
+                    202,
+                    36,
+                    237
+                ]
+            }
+        }
+    ]
+}

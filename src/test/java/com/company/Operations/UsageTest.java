@@ -5,7 +5,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class UsageTest {
-    String userPassword = "Password";
+    public String userName = "Test";
+    public String userPassword = "Password";
+    public String logPath = "logFile";
     @Test
     public void getUserName() {
     }
@@ -28,5 +30,20 @@ public class UsageTest {
             System.out.println("User authenticated");
             //assertEquals();
 
+    }
+
+
+    @Test
+    public void testSetUserName() {
+    }
+
+
+    @Test
+    public void testSetUserPassword() {
+    }
+
+    @Test
+    public void statistics(String logPath) {
+        this.logPath = logPath;
     }
 }
