@@ -22,7 +22,7 @@ public class Usage {
 
     public void setUserName(String userName) {
         String validateUserName = userName;
-        if (validateUserName.equals("Test")) {
+        if (validateUserName.equals("Test") || validateUserName.equals("")) {
             this.userPassword = userPassword;
         } else System.out.println("User not found, please try again");
         this.userName = userName;
@@ -34,7 +34,8 @@ public class Usage {
 
         public void setUserPassword(String userPassword) {
             String validatePassword = userPassword;
-            if (validatePassword.equals("Password")) {
+            //Blank validation for testing the
+            if (validatePassword.equals("Password") || validatePassword.equals(""))  {
                 this.userPassword = userPassword;
             } else System.out.println("User not found, please try again");{
             }
