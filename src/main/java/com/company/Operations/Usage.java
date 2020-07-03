@@ -42,11 +42,13 @@ public class Usage {
             this.userPassword = userPassword;
         }
 
+    //method not complete to search for the logs in the date file - sc
     public void departmentSearchLog(String logPath) {
         this.logPath = logPath;
     }
 
-        public void resultsLog(String logPath) {
+    //methods not complete to get the auditor logs for statistics - sc
+    public void resultsLog(String logPath) {
             this.logPath = logPath;
     }
 
