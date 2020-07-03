@@ -73,7 +73,7 @@ public class JsonParser {
         }
     }
     //
-    //the findItem is mapped out
+    //the findItem is mapped out into objects
     public void itMapping() {
         try {
             // JSON string
@@ -81,9 +81,13 @@ public class JsonParser {
             // convert JSON string to Java Map
             Map<String, Object> map = new Gson().fromJson(Map, Map.class);
 
-            // print map keys and values
+            // print map keys and values as a complete set but this can
+            // be mapped out to individual entities, no benefit at this stage. - sc
             for (Map.Entry<String, Object> entry : map.entrySet()) {
                 System.out.println(entry.getKey() + ": " + entry.getValue());
+                //Comment left in to show how to map to individual ket sets.
+                //if (entry.getKey().equals("server_admin")) {
+                //this.mapAdmin = entry.getValue();}
             }
 
         } catch (Exception ex) {
