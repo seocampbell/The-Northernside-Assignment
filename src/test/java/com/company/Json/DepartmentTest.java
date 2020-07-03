@@ -13,10 +13,10 @@ public class DepartmentTest {
 
     @Test
     public void setDepartmentSelector() {
-        int ValidateResource = jsonSelector;
-        if (ValidateResource == 1) {
+        int validateResource = jsonSelector;
+        if (validateResource == 1) {
             this.departmentSelector = "staff";
-        } else if (ValidateResource == 2) {
+        } else if (validateResource == 2) {
             this.departmentSelector = "staff";
         } else System.out.println("Error, the department has not been expected, please check.");
         assertEquals(this.departmentSelector, departmentSelector);
